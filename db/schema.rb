@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2018_07_04_154559) do
 
-  create_table "apps", force: :cascade do |t|
+  create_table "apps", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.float "rating"
     t.datetime "release_date"
